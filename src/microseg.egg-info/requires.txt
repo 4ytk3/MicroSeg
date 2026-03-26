@@ -1,0 +1,17 @@
+numpy>=1.26
+scipy>=1.11
+scikit-image>=0.25
+matplotlib>=3.10
+opencv-python>=4.10
+pyside6>=6.7
+roifile>=2024.5.24
+pillow>=10.0
+torch>=2.2
+torchvision>=0.17
+transformers>=4.44
+peft>=0.12
+segment-anything>=1.0
+tensorboard>=2.16
+
+[dist]
+pyinstaller>=6.16.0

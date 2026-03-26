@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "microseg"
+version = "0.1.0"
+description = "MicroSeg: Electron micrograph segmentation and analysis GUI"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "scikit-image>=0.25",
+  "matplotlib>=3.10",
+  "opencv-python>=4.10",
+  "pyside6>=6.7",
+  "roifile>=2024.5.24",
+  "pillow>=10.0",
+  "torch>=2.2",
+  "torchvision>=0.17",
+  "transformers>=4.44",
+  "peft>=0.12",
+  "segment-anything>=1.0",
+  "tensorboard>=2.16",
+]
+
+[project.optional-dependencies]
+dist = [
+  "pyinstaller>=6.16.0",
+]
+
+[project.scripts]
+microseg = "microseg.main:main"
+microseg-train = "microseg.train.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["microseg*"]
