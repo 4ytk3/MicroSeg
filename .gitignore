@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+build/
+dist/
+releases/
+
+*.egg-info/
+src/microseg.egg-info/
+
+outputs/
+logs/

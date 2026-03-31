@@ -1,3 +1,0 @@
-[console_scripts]
-microseg = microseg.main:main
-microseg-train = microseg.train.cli:main
